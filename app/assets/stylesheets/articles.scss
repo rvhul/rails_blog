@@ -1,12 +1,36 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-th {
-font-size: 2em;
+h1{
+&.life {
+font-size:1.9em;
+font-style: italic;
+}
+}
+
+.container p {
+  &.comments {
+    font-size: 1.3em;
+  }
+
+}
+tr th {
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+tr td {
+  padding: 0.2em 1.8em 0.2em 0;
 }
 tr td a {
-font-size: 1em;
+  font-size: 1.1em;
+  margin-left: 0.5em;
 }
-a {
+
+.container a {
+  font-size: 1.3em;
+}
+
+.container h2 {
 font-size: 1.3em;
 }

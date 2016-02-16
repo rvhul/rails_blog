@@ -1,21 +1,21 @@
 <div class="container">
 
-  <h1>Showing Blog Post</h1>
-  <p>
+  <h1>Showing Blog Post '<strong><%= @article.title %></strong>'</h1>
+  <p class="comments">
     Title: <%= @article.title %>
   </p>
 
-  <p>
+  <p class="comments">
     Text:  <%= @article.text %>
   </p>
 
   <h2>Comments:</h2>
-  <%= render @article.comments %>
+  <%= render @article.comments %><br>
 
-  <h2>Add A Comment:</h2>
+  <h2>Got something to say?:</h2>
 
 <%= render 'comments/form' %>
-<%= link_to 'Edit', edit_article_path %>
-<%= link_to 'Posts', articles_path %>
+<%= link_to 'Edit', edit_article_path %><br>
+<%= link_to 'Posts', articles_path %><br>
 <%= link_to 'Home', controller: 'welcome' %>
 </div>
