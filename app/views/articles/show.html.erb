@@ -1,20 +1,21 @@
-<h1>Showing Blog Post</h1>
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<div class="container">
 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+  <h1>Showing Blog Post</h1>
+  <p>
+    Title: <%= @article.title %>
+  </p>
 
-<h2>Comments</h2>
-<%= render @article.comments %>
+  <p>
+    Text:  <%= @article.text %>
+  </p>
 
-<h2>Add A Comment:</h2>
+  <h2>Comments:</h2>
+  <%= render @article.comments %>
+
+  <h2>Add A Comment:</h2>
+
 <%= render 'comments/form' %>
-
 <%= link_to 'Edit', edit_article_path %>
 <%= link_to 'Posts', articles_path %>
 <%= link_to 'Home', controller: 'welcome' %>
+</div>
